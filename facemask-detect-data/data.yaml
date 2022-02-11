@@ -1,5 +1,5 @@
-train: 'https://raw.githubusercontent.com/obengdouglas/DSI-2022/main/facemask-detect-data/images/train'
-val: 'https://raw.githubusercontent.com/obengdouglas/DSI-2022/main/facemask-detect-data/images/val'
+train: r'https://raw.githubusercontent.com/obengdouglas/DSI-2022/main/facemask-detect-data/images/train'
+val: r'https://raw.githubusercontent.com/obengdouglas/DSI-2022/main/facemask-detect-data/images/val'
 
 nc: 3
 names: ['mask_weared_incorrect', 'with_mask', 'without_mask']

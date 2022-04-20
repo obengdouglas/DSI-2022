@@ -1,0 +1,54 @@
+Normalise topic 2/ all topics per day
+date tweet max(tweet_count)
+
+Top 5 tweets
+
+
+Sitwala Mundia7:41 AM
+date tweet max(tweet_count)
+Sitwala Mundia7:58 AM
+select DISTINCT *
+from nlp.topics as main
+right join
+  (SELECT DISTINCT tweet, retweet_count
+  from nlp.topics
+  where topic = 2 
+  ) as sub
+ on main.tweet = sub.tweet
+ order by main.retweet_count DESC
+ limit 10;
+Sitwala Mundia8:02 AM
+retweet
+
+
+Indicator of diff btn days/ % drop
+
+
+Dashboard for notebook and github
+Trello
+Conclusion notebook and github
+
+
+Tania Garrigoux5:36 PM
+I think there are a few things to finalise:
+- finish notebook/report (also implement corrections and comments, some global editing) (nancy)
+-  xxxmake sure readme is complete (nancy)
+- xxxtrello final corrections (mary)
+- finalise dashboard (douglas)
+- xxxslides and presentation recording (sitwala)
+- xxxediting of presentation
+- final editing of notebook
+
+
+Thank you
+To help us monitor our topic of interest which is topic 2, we built our dashboard using tableau. Data was queried from Mysql 
+The dashboard tracks tracks on a daily basis, the number of tweets and retweets that are predicted to belong to topic 2. Importantly, 
+we also have a normalized plot that shows the proportion of topic 2 to the total number of tweets in a day. The bottom part shows the 
+top 10 tweets. The overview part gives quick info on the time of last query, number of tweets and retweets within the last 24 hours 
+and a brief summary of our main insights gleaned from the results. Finally, we have added a button that links to the PyLDAvis model 
+visualization. You may follow the link below to the published dashboard and model vis.
+
+
+To conclude our presentation,
+we have used nlp models to predict the main topics that may be gleaned from huge volumes of twitter data. We found that the model 
+accuracy diminishes over time suggesting the need for frequent retrains. And we finished by building and deploying a dashboard for our results. Thank you

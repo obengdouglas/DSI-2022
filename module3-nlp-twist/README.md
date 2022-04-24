@@ -25,6 +25,6 @@ The objectives of the project are:
 The deliverables for this project are:
 - Python notebook: Detailed analysis of events and translation of english notes to french
 - PowerPoint presentation
-- Tableau: Further analysis of events using Tableau dashboard. The dashboard has been deployed at the following link
+- Tableau: Further analysis of events using Tableau dashboard. The dashboard has been deployed at the following link https://public.tableau.com/app/profile/douglas.obeng4472/viz/ACLED-2021-West-Africa/Dashboard1?publish=yes
 
 All deliverables have been saved in the github repository https://github.com/obengdouglas/DSI-2022/tree/main/module3-nlp-twist. Data used for this project is also saved in the same github repo
